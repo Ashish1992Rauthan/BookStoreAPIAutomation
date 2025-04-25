@@ -26,10 +26,10 @@ public class BooksApi {
 
     private static Map<String, Object> createBookPayload(Map<String, Object> bookDetails) {
         Map<String, Object> payload = new HashMap<>();
-        payload.put("name", bookDetails.get("bookName"));
-        payload.put("author", bookDetails.get("author"));
-        payload.put("published_year", bookDetails.get("published_year"));
-        payload.put("book_summary", bookDetails.get("book_summary"));
+        payload.put("name",bookDetails.get("bookName"));
+        payload.put("author",bookDetails.get("author"));
+        payload.put("published_year",bookDetails.get("published_year"));
+        payload.put("book_summary",bookDetails.get("book_summary"));
         return payload;
     }
 
